@@ -1,0 +1,261 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+img {
+    display: inline-block;
+}
+.top-layout {
+    margin: 20px;
+}
+.top-layout img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    margin-right: 10px;
+}
+.top-layout span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #000000;
+}
+.right-layout {
+    position: relative;
+    top: 40px;
+}
+.login-layout {
+    position: relative;
+    width: 100%;
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;*/
+    height: 100vh;
+    overflow-y: hidden;
+    background: #F1F1F3;
+}
+.login-form .bg {
+    position: absolute;
+    left: -370px;
+    top: 16px;
+    width: 276px;
+    z-index: 3;
+}
+.login-form .bg img {
+    display: block;
+    width: 100%;
+}
+.login-form {
+    position: relative;
+    left: 150px;
+    z-index: 3;
+    margin: auto;
+    width: 280px;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+.login-form form h2 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.login-form form {
+    width: 280px;
+    border-radius: 15px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.login-form form .username {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.login-form form .username label {
+    font-size: 12px;
+    color: #666;
+    display: block;
+    margin-bottom: 8px;
+}
+.login-form form .username input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    height: 30px;
+    padding: 3px 35px;
+    font-size: 8px;
+    box-sizing: border-box;
+}
+.login-form form .username i {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    content: '';
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+}
+.login-form form .password i {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    content: '';
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+}
+.login-form form .password .close {
+    display: none;
+}
+input:focus-visible {
+    border-color: #024FCE !important;
+    outline: azure;
+}
+.login-form form .remember {
+    position: relative;
+    margin: 15px 0 20px;
+}
+.login-form form .remember input {
+    display: inline-block;
+    vertical-align: top;
+    width: 11px;
+    height: 11px;
+    margin: 3px 0;
+    cursor: pointer;
+}
+.login-form form .remember label {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    vertical-align: top;
+}
+.login-form form .remember a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    font-size: 12px;
+    color: #3251E7;
+    cursor: pointer;
+    vertical-align: top;
+}
+.login-form form .remember a:hover {
+    text-decoration: underline;
+}
+.login-form form button {
+    display: block;
+    background-size: 100% 100%;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.login-form form button:hover {
+    opacity: 0.8;
+}
+input::-webkit-input-placeholder{
+    color: #ddd;
+    font-size: 10px;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #ddd;
+    font-size: 10px;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #ddd;
+    font-size: 10px;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color: #ddd;
+    font-size: 10px;
+}
+.aggreement {
+    font-size: 10px;
+    color: #666;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+.aggreement a {
+    color: #4994C4;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.aggreement a:hover {
+    opacity: 0.8;
+}
+.forget {
+    display: block;
+    margin-top: 100px;
+    font-size: 12px;
+    color: #666;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.forget:hover {
+    text-decoration: underline;
+}
+.bottom-layout {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+.bottom-layout img {
+    display: block;
+    width: 550px;
+    margin: 60px auto 0;
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+    -webkit-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-html .sign-cp,
+.login-form .group .check {
+    display:none;
+}
+.login-html .radio{
+    display: none;
+}
+
+
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+    text-transform:uppercase;
+}
+.login-html .tab{
+    margin-right: 15px;
+    padding-bottom:15px;
+    margin:0 20px 10px 0;
+    display:inline-block;
+    border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab,
+.login-html .sign-cp:checked + .tab{
+    color:#0567B8;
+    border-color:#0061B5;
+}
